@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-image: linear-gradient(to right, #0f172a, #374151);
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-image: linear-gradient(to right, #0f172a, #374151);
+    --foreground: black;
+  }
+}
+
+body {
+  color: var(--foreground);
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #0f172a, #374151);
+}
+.que {
+  @media only screen and (orientation: portrait) {
+    font-size: xx-large;
+  }
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
